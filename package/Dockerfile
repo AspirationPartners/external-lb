@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM alpine:latest
 RUN apk add --no-cache ca-certificates 
 COPY external-lb /usr/bin/
 ENTRYPOINT ["/usr/bin/external-lb"]
